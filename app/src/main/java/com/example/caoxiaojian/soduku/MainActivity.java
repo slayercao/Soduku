@@ -1,8 +1,8 @@
 package com.example.caoxiaojian.soduku;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_new:
-
+                Intent new_game_intent = new Intent(this, NewGameActivity.class);
+                startActivity(new_game_intent);
                 break;
             case R.id.btn_resume:
 
